@@ -18,15 +18,15 @@ std::vector<gui::Widget*> widgets;
 
 void Init()
 {
-    paintArea= new gui::PaintArea(sf::IntRect(150,50,500,500));
-    clearButton = new gui::Button(sf::FloatRect(300.0,600.0,200.0,75.0),"Clear",sf::Color::Red);
+    paintArea= new gui::PaintArea(sf::IntRect(150,50,560,560));
+    clearButton = new gui::Button(sf::FloatRect(330.0,660.0,200.0,75.0),"Clear",sf::Color::Red);
     clearButton->setCallback([=]{
         paintArea->clear();
     });
 
-    small = new gui::Button(sf::FloatRect(650.0,100.0,120.0,60.0),"small",sf::Color::Blue);
-    medium = new gui::Button(sf::FloatRect(650.0,170.0,120.0,60.0),"medium",sf::Color::Blue);
-    large = new gui::Button(sf::FloatRect(650.0,240.0,120.0,60.0),"large",sf::Color::Blue);
+    small = new gui::Button(sf::FloatRect(710.0,100.0,120.0,60.0),"small",sf::Color::Blue);
+    medium = new gui::Button(sf::FloatRect(710.0,170.0,120.0,60.0),"medium",sf::Color::Blue);
+    large = new gui::Button(sf::FloatRect(710.0,240.0,120.0,60.0),"large",sf::Color::Blue);
 
     small->setCallback([=] {
         paintArea->setRadius(10);
