@@ -11,6 +11,7 @@ public:
     void handleEvent(sf::Event event);
     void center();
     void update();
+    void setText(const std::string &str);
 
 protected:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const;

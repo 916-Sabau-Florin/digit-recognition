@@ -25,6 +25,11 @@ void TextArea::draw(sf::RenderTarget& target, sf::RenderStates states) const
     target.draw(_text);
 }
 
+void TextArea::setText(const std::string &str)
+{
+    _text.setString(str);
+}
+
 void TextArea::center()
 {
     sf::FloatRect textRect = this->_text.getLocalBounds();

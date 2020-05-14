@@ -124,4 +124,21 @@ void PaintArea::draw(sf::RenderTarget& target, sf::RenderStates states) const
     target.draw(_sprite);
 }
 
+nn::matrix<double> PaintArea::toMatrix(int r,int c)
+{
+    nn::matrix<double> result(r,c);
+    for(int y=0;y<r;y++)
+    {
+        for(int x=0;x<c;x++)
+        {
+            double op=0;
+            for(int j=0;j<_height/r;j++)
+                for(int i=0;i<_width/c;i++)
+                    op+=getColor(x*(_width/c)+i+1,y*(_height/r)+j+1)==sf::Color::White?1:0;
+            result[{x,y}]=op/((_height/r)*(_width/c));
+        }
+    }
+    return result;
+}
+
 }

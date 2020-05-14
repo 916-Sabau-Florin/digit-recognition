@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="SFML_test" />
+		<Option title="sfml-gui" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -17,6 +17,8 @@
 					<Add directory="F:/Libraries/SFML-2.5.1/include" />
 					<Add directory="include" />
 					<Add directory="src" />
+					<Add directory="neural_network/include" />
+					<Add directory="neural_network/src" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />
@@ -47,6 +49,15 @@
 		<Unit filename="include/Resources.hpp" />
 		<Unit filename="include/TextArea.hpp" />
 		<Unit filename="include/Widget.hpp" />
+		<Unit filename="neural_network/include/func.hpp" />
+		<Unit filename="neural_network/include/idx_format.hpp" />
+		<Unit filename="neural_network/include/matrix.tpp" />
+		<Unit filename="neural_network/include/neural_network.hpp" />
+		<Unit filename="neural_network/include/random.tpp" />
+		<Unit filename="neural_network/include/utils.hpp" />
+		<Unit filename="neural_network/src/func.cpp" />
+		<Unit filename="neural_network/src/neural_network.cpp" />
+		<Unit filename="neural_network/src/utils.cpp" />
 		<Unit filename="src/Button.cpp" />
 		<Unit filename="src/PaintArea.cpp" />
 		<Unit filename="src/Resources.cpp" />

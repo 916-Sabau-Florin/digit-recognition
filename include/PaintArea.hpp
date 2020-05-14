@@ -3,6 +3,7 @@
 #include <cstring>
 #include <Resources.hpp>
 #include <Widget.hpp>
+#include <matrix.tpp>
 
 
 namespace gui {
@@ -17,6 +18,7 @@ public:
     void setRadius(float radius);
     void handleEvent(sf::Event event);
     void draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    nn::matrix<double> toMatrix(int r,int c);
     void clear();
 
 private:

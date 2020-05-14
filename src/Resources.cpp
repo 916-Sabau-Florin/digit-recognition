@@ -10,6 +10,6 @@ sf::RenderWindow window;
 
 void LoadResources()
 {
-    window.create(sf::VideoMode(1366,768),"SFML doesn't work");
+    window.create(sf::VideoMode(920,768),"Digit Recognition");
     gui::font.loadFromFile("Roboto-Regular.ttf");
 }
