@@ -1,3 +1,0 @@
-[submodule "neural_network"]
-	path = neural_network
-	url = https://github.com/nacho-vlad/neural_network.git
